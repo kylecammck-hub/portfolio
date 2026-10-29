@@ -4,7 +4,6 @@ export interface Profile {
   blurb: string;
   email: string;
   githubUrl: string;
-  linkedinUrl: string;
   locationUrl: string;
   locationText: string;
   resume: string;
