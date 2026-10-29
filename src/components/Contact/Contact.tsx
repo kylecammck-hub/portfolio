@@ -1,12 +1,6 @@
 import "./Contact.css";
 import { profile } from "../../data/profile";
-import {
-  FileIcon,
-  GithubIcon,
-  LinkedinIcon,
-  MailIcon,
-  PinIcon,
-} from "../Icons/Icons";
+import { FileIcon, GithubIcon, MailIcon, PinIcon } from "../Icons/Icons";
 
 export default function Contact() {
   return (
@@ -50,17 +44,6 @@ export default function Contact() {
             aria-label="GitHub"
           >
             <GithubIcon />
-          </a>
-        </li>
-        <li>
-          <a
-            className="contact__social"
-            href={profile.linkedinUrl}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="LinkedIn"
-          >
-            <LinkedinIcon />
           </a>
         </li>
       </ul>
