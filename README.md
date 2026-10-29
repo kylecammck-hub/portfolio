@@ -2,7 +2,7 @@
 
 A single-page portfolio site showcasing my projects, skills, and contact info. It's fully responsive, with a collapsible mobile menu, and all content lives in strictly typed data files.
 
-**Live site:** LIVE_URL_HERE
+**Live site:** https://portfolio-git-sprint-12-triple-ten3.vercel.app
 
 ## Stack
 
