@@ -1,7 +1,7 @@
 import type { Project } from "../types";
 import meshAiImg from "../assets/projects/mesh-ai.jpg";
 import workspaceHubImg from "../assets/projects/workspacehub.jpg";
-import flashcardsImg from "../assets/projects/flashcards.svg";
+import flashcardsImg from "../assets/projects/flashcards.jpg";
 
 export const projects: Project[] = [
   {
