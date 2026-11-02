@@ -1,0 +1,117 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: var(--color-bg-primary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header__inner {
+  max-width: var(--max-width);
+  height: var(--header-height);
+  margin: 0 auto;
+  padding: 0 var(--page-gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__brand {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.header__brand:hover {
+  color: var(--color-blue);
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  gap: 8px;
+}
+
+.header__link {
+  padding: 6px 10px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition:
+    color 0.2s,
+    background-color 0.2s;
+}
+
+.header__link:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-hover-secondary);
+}
+
+.header__contact {
+  display: none;
+}
+
+.header__toggle {
+  display: none;
+  padding: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.header__toggle:hover {
+  background-color: var(--color-hover-secondary);
+}
+
+@media (max-width: 720px) {
+  .header__toggle {
+    display: inline-flex;
+  }
+
+  .header__menu {
+    display: none;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 32px;
+    padding: 24px var(--page-gutter);
+    background-color: var(--color-bg-primary);
+    overflow-y: auto;
+  }
+
+  .header_open .header__menu {
+    display: flex;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .header__link {
+    padding: 12px;
+    font-size: 18px;
+    color: var(--color-text-primary);
+  }
+
+  .header__contact {
+    display: block;
+    padding-top: 24px;
+    border-top: 1px solid var(--color-border);
+  }
+}

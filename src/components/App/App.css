@@ -1,0 +1,26 @@
+.section {
+  padding: 80px 0;
+  scroll-margin-top: var(--header-height);
+}
+
+.section__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--page-gutter);
+}
+
+.section__title {
+  margin: 0 0 24px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 56px 0;
+  }
+
+  .section__title {
+    font-size: 26px;
+  }
+}
